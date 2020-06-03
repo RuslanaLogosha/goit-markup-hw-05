@@ -63,6 +63,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
+  
 }
 
 .container {
@@ -214,10 +215,11 @@ header {
 }
 
 .overlay {
-  max-width: 1600px;
+  min-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  
   background-image: linear-gradient(
     to right, 
     rgba(47, 48, 58, 0.8),
@@ -603,7 +605,9 @@ input::placeholder {
 
 .copyright {
   padding-top: 18px;
-  padding-bottom: 17px;
+  padding-bottom: 21px;
+  margin-bottom: 0;
+  margin-top: 0;
 
   font-size: 12px;
   line-height: 2;

@@ -222,10 +222,17 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  background-color: #2196F3; /* will be removed later */
+  
 }
 
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .overlay {
+  position: relative;
   min-width: 1600px;
   height: 600px;
   margin-left: 0;

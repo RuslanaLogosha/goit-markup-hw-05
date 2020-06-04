@@ -146,9 +146,16 @@ header {
   color: var(--accent-text-color);
 }
 
+.site-nav .current {
+  position: relative;
+}
 
 .site-nav .current::after {
+  position: absolute;
   content: '';
+  bottom: 0;
+  right:0;
+
   display: block;
   width: 100%;
   height: 4px;
@@ -156,6 +163,9 @@ header {
   background: var(--accent-text-color);
   border-radius: 2px;
 }
+
+
+
 
 /* Site auth */
 .site-auth {
@@ -222,7 +232,6 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  
 }
 
 .hero-text {

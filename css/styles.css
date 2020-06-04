@@ -143,10 +143,6 @@ header {
 }
 
 .site-nav .current {
-  color: var(--accent-text-color);
-}
-
-.site-nav .current {
   position: relative;
 }
 
@@ -410,14 +406,45 @@ header {
   background-color: var(--main-background-color);
 }
 
+.spec-overlay {
+  position: relative;
+}
+
+/* .spec-overlay::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  width: 370px;
+  height: 70px;
+  
+  background-color: rgba(47, 48, 58, 0.8);
+} */
+
 .specialization .spec-titles {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+
+  display: block;
+  padding: 27px;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
-  background-color: var(--accent-text-color); /* временно */
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Our team */

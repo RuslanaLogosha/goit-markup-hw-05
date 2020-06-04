@@ -164,9 +164,6 @@ header {
   border-radius: 2px;
 }
 
-
-
-
 /* Site auth */
 .site-auth {
   display: flex;
@@ -314,16 +311,28 @@ header {
 /* Advantages */
 .advantages {
   padding-top: 94px;
-  
+    
   background-color: var(--main-background-color);
 }
 
 .advantages-list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
+}
 
-  border-bottom: 1px solid #ECECEC;
+.advantages-list::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  display: block;
+
+  width: 100%;
+  height: 1px;
+  border-bottom: solid #ECECEC;
 }
 
 .advantages .advantages-titles {

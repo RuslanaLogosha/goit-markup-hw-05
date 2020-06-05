@@ -422,15 +422,15 @@ header {
   height: 70px;
   
   background-color: rgba(47, 48, 58, 0.8);
+
+  но в этом варианте я не придумала, как спозиционировать тескт
 } */
 
 .specialization .spec-titles {
   position: absolute;
   bottom: 0;
   right: 0;
-  /* transform: translate(-50%, -50%); */
-  z-index: 2;
-
+  
   display: block;
   padding: 27px;
   margin: 0;
@@ -661,9 +661,25 @@ input::placeholder {
   width: 270px;
 }
 
-.btn-add {
+.btn-text {
+  display: flex;
   font-weight: 900;
   font-family: Roboto;
+  align-content: baseline;
+
+}
+
+.btn-text::after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  align-content: center;
+  
+  background-image: url('../images/send.svg');
+  background-size: contain;
+  
 }
 
 .copyright {

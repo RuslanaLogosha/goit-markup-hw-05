@@ -128,7 +128,7 @@ header {
 .site-nav .link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -144,6 +144,8 @@ header {
 
 .site-nav .current {
   position: relative;
+
+  color: var(--accent-text-color);
 }
 
 .site-nav .current::after {

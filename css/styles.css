@@ -278,7 +278,6 @@ header {
   color: var(--main-title-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 /* button for portfolio.html */
@@ -671,12 +670,26 @@ input::placeholder {
   width: 270px;
 }
 
+/* Training of button with 2 pseudoelements flying aroud */
+.footer-container .button {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container .button:hover,
+.footer-container .button:focus {
+  background-color: palevioletred;
+}
+
 .btn-text {
-  display: flex;
+  display: inline-flex;
   font-weight: 900;
   font-family: Roboto;
   align-content: baseline;
+  cursor: pointer;
+  overflow: hidden;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text::after {
@@ -689,9 +702,37 @@ input::placeholder {
   
   background-image: url('../images/send.svg');
   background-size: contain;
-  
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-text:hover::after {
+  transform: translateY(-35px);
+}
+
+.btn-text::before {
+  position: absolute;
+  transform: translateY(40px);
+
+  right: 30px;
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  
+  background-image: url(../images/mail.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: var(--main-title-color);
+ 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-text:hover::before {
+  transform: translateY(0);
+}
+
+/* Copyright */
 .copyright {
   padding-top: 18px;
   padding-bottom: 21px;

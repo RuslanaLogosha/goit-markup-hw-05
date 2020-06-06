@@ -421,22 +421,6 @@ header {
   position: relative;
 }
 
-/* .spec-overlay::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-
-  display: block;
-  width: 370px;
-  height: 70px;
-  
-  background-color: rgba(47, 48, 58, 0.8);
-
-  но в этом варианте я не придумала, как спозиционировать тескт
-} */
-
 .specialization .spec-titles {
   position: absolute;
   bottom: 0;

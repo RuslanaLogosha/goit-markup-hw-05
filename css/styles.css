@@ -78,7 +78,14 @@ body {
 
 /* Header */
 
-header {
+.header-fixed {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  min-height: 80px;
+  z-index: 3;
+
   background-color: var(--header-background-color);
 }
 

@@ -817,11 +817,11 @@ input::placeholder {
   overflow: hidden;
 }
 
-.examples-overlay:hover::before {
+.flex-examples-elements:hover .examples-overlay::before{
   opacity: 1;
 }
 
-.examples-overlay:hover .examples-text {
+.flex-examples-elements:hover .examples-text {
   opacity: 1;
 }
 
